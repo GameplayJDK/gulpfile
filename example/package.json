@@ -1,0 +1,31 @@
+{
+  "name": "gulpfile-example",
+  "version": "1.0.0",
+  "description": "A usage example on how to use the gulpfile library.",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "gulp",
+    "gulpfile",
+    "example"
+  ],
+  "author": "GameplayJDK <github@gameplayjdk.de>",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.13.1",
+    "@glidejs/glide": "^3.4.1",
+    "bootstrap": "^4.5.0",
+    "jquery": "^3.5.1",
+    "lazysizes": "^5.2.2",
+    "popper.js": "^1.16.1",
+    "small-module-js": "^1.0.2"
+  },
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulpfile": "^1.0.0",
+    "minimist": "^1.2.5"
+  }
+}

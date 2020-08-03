@@ -1,0 +1,13 @@
+# Library
+
+/node_modules/
+
+# Asset
+
+/asset/image/responsive/*
+!/asset/image/responsive/.gitignore
+
+# Public
+
+/public/asset/*
+!/public/asset/.gitignore

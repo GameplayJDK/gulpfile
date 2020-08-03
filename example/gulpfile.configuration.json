@@ -1,0 +1,120 @@
+{
+  "style": {
+    "src": "./asset/style/main.scss",
+    "dest": "./public/asset/style",
+    "destMap": "./map",
+    "del": "./public/asset/style/**"
+  },
+  "script": {
+    "add": [
+      "./node_modules/jquery/dist/jquery.js",
+      "./node_modules/popper.js/dist/umd/popper.js",
+      "./node_modules/bootstrap/dist/js/bootstrap.js",
+      "./node_modules/lazysizes/lazysizes.js",
+      "./node_modules/lazysizes/plugins/bgset/ls.bgset.js",
+      "./node_modules/@glidejs/glide/dist/glide.js",
+      "./node_modules/small-module-js/src/main.js"
+    ],
+    "src": "./asset/script/module/*.js",
+    "dest": "./public/asset/script",
+    "destMap": "./map",
+    "rename": {
+      "concat": "main.js",
+      "ext": {
+        "src": ".js",
+        "min": ".min.js"
+      }
+    },
+    "del": "./public/asset/script/**"
+  },
+  "font": {
+    "src": [
+      "./asset/font/**/*",
+      "./node_modules/@fortawesome/fontawesome-free/webfonts/*"
+    ],
+    "dest": "./public/asset/font",
+    "del": "./public/asset/font/**"
+  },
+  "image": {
+    "src": "./asset/image/**/*.{png,jpg,jpeg,gif,svg}",
+    "dest": "./public/asset/image",
+    "del": "./public/asset/image/**"
+  },
+  "image_responsive": {
+    "src": [
+      "./asset/image/**/*.{png,jpg}",
+      "!./asset/image/responsive"
+    ],
+    "dest": "./asset/image/responsive",
+    "del": "./asset/image/responsive/**",
+    "configuration": {
+      "**/*.png": [
+        {
+          "width": 540,
+          "rename": {
+            "suffix": "-540"
+          }
+        },
+        {
+          "width": 720,
+          "rename": {
+            "suffix": "-720"
+          }
+        },
+        {
+          "width": 960,
+          "rename": {
+            "suffix": "-960"
+          }
+        },
+        {
+          "width": 1140,
+          "rename": {
+            "suffix": "-1140"
+          }
+        },
+        {
+          "rename": {
+            "suffix": "-original"
+          }
+        }
+      ],
+      "**/*.jpg": [
+        {
+          "width": 540,
+          "rename": {
+            "suffix": "-540"
+          }
+        },
+        {
+          "width": 720,
+          "rename": {
+            "suffix": "-720"
+          }
+        },
+        {
+          "width": 960,
+          "rename": {
+            "suffix": "-960"
+          }
+        },
+        {
+          "width": 1140,
+          "rename": {
+            "suffix": "-1140"
+          }
+        },
+        {
+          "rename": {
+            "suffix": "-original"
+          }
+        }
+      ]
+    }
+  },
+  "data": {
+    "src": "./asset/data/**/*",
+    "dest": "./public/asset/data",
+    "del": "./public/asset/data/**"
+  }
+}
