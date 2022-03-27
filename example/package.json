@@ -26,6 +26,6 @@
   "devDependencies": {
     "gulp": "^4.0.2",
     "@gameplayjdk/gulpfile": "^1.0.0",
-    "minimist": "^1.2.5"
+    "minimist": "^1.2.6"
   }
 }
